@@ -78,12 +78,12 @@ def non_max_suppression(
             filtered_objects.append(object_)
     return filtered_objects
 
-image = cv2.imread("data/printed-circuit.jpg")
+image = cv2.imread("data/chichetas/printed-circuit.jpg")
 
 templates = [
-    Template(image_path="data/component1.jpg", label="1", color=(0, 0, 255)),
-    Template(image_path="data/component2.jpg", label="2", color=(0, 255, 0)),
-    Template(image_path="data/component3.jpg", label="3", color=(0, 191, 255)),
+    Template(image_path="data/chinchetas/component1.jpg", label="1", color=(0, 0, 255)),
+    Template(image_path="data/chinchetas/component2.jpg", label="2", color=(0, 255, 0)),
+    Template(image_path="data/chinchetas/component3.jpg", label="3", color=(0, 191, 255)),
 ]
 
 detections = []
